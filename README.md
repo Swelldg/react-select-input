@@ -12,7 +12,6 @@
   Users can determine the size of components according to their own needs.
  
  ## Example
- `npm start`
 ![demo](/demo.gif)
 
 ## Basic Usage
