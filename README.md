@@ -1,13 +1,13 @@
-# react-select-input
-[![npm](https://img.shields.io/badge/npm-v0.1.0-orange)](https://www.npmjs.com/package/react-select-input)
-[![license](https://img.shields.io/badge/license-MIT-blue)](https://github.com/Swelldg/react-select-input/blob/master/license)
+# react-selector-input
+[![npm](https://img.shields.io/badge/npm-v0.1.0-orange)](https://www.npmjs.com/package/react-selector-input)
+[![license](https://img.shields.io/badge/license-MIT-blue)](https://github.com/Swelldg/react-selector-input/blob/master/license)
 > a React input component with selector and filter
 
 ## Advantages
 - Offer preset labels for users to input content  
   Add a selector to a regular input box.Users can not only input content manually, but also select preset labels.
 - Search options according to highlighted input keywords   
-  When users input content,**react-select-input** can filter the labels in the selector based on keywords.Those keywords will also be highlighted with different color in the selector.
+  When users input content,**react-selector-input** can filter the labels in the selector based on keywords.Those keywords will also be highlighted with different color in the selector.
 - Provide customized css style  
   Users can determine the size of components according to their own needs.
  
@@ -17,11 +17,11 @@
 ## Basic Usage
 ### Installation
 ```
-npm i react-select-input
+npm i react-selector-input
 ```
 ### Import
 ```jsx
-import SelectInput from "react-select-input";
+import SelectInput from "react-selector-input";
 ```
 ### Usage
 ```jsx
