@@ -1,0 +1,69 @@
+.react-select-input-wrapper{
+    width: 150px;
+    box-sizing: border-box;
+}
+.react-select-input{
+    width: 100%;
+    box-sizing: border-box;
+    transition:  all .2s;
+    padding: 6px 20px 6px 10px;
+    border:1px solid #d9d9d9;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.react-select-input.disabled{
+   cursor: not-allowed;
+}
+.react-select-input:hover{
+    border: 1px solid #4096ff;
+}
+.react-select-input.disabled:hover{
+    border:1px solid #d9d9d9;
+}
+.react-select-input:focus{
+    outline: none;
+    border: 1px solid #4096ff;
+}
+.down-arrow{
+    position: absolute;
+    color: rgba(0,0,0,.25);
+    font-size: 12px;
+    transform: translateX(-20px) translateY(7px);
+}
+.down-arrow.disabled{
+    cursor: not-allowed;
+}
+
+.react-select-input-select-list{
+    width: 150px;
+    display: none;
+    position: relative;
+    box-sizing: border-box;
+    max-height: 150px;
+    overflow-y: scroll;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 6px 6px 6px 6px;
+    transition: opacity 0.2s;
+    box-shadow: 0 6px 16px 0 rgb(0 0 0 / 8%), 0 3px 6px -4px rgb(0 0 0 / 12%), 0 9px 28px 8px rgb(0 0 0 / 5%);
+}
+
+.select-list-item{
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 0.2s;
+    padding: 6px 20px 6px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+.select-list-item:hover{
+    background: rgba(0,0,0,.06);
+}
+.react-select-input-close {
+    transition: 0.2s;
+    cursor: pointer;
+    font-size: 12px;
+}
+.react-select-input-contain.disabled{
+    cursor: not-allowed;
+}

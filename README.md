@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# react-select-input
+[![npm](https://img.shields.io/badge/npm-v0.0.1-orange)](https://www.npmjs.com/package/react-select-input)
+[![license](https://img.shields.io/badge/license-MIT-blue)](https://github.com/Swelldg/react-select-input/blob/master/license)
+> a React input component with selector and filter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Advantages
+- Offer preset labels for users to input content  
+  Add a selector to a regular input box.Users can not only input content manually, but also select preset labels.
+- Search options according to highlighted input keywords   
+  When users input content,**react-select-input** can filter the labels in the selector based on keywords.Those keywords will also be highlighted with different color in the selector.
+- Provide customized css style  
+  Users can determine the size of components according to their own needs.
+## Basic Usage
+### Installation
+```
+npm i react-select-input
+```
+### Import
+```jsx
+import SelectInput from "react-select-input";
+```
+### Usage
+```jsx
+function Example(){
+    const options = [
+        {
+            label:'test1'
+        },
+        {
+            label:'test2'
+        },
+        {
+            label:'test3'
+        },
+        {
+            label:'test4'
+        },
+    ]
+    const  onChange = (e) => {
+        console.log(e.target.value);
+    }
+    return (
+        <div style={{display:'flex',justifyContent:'center',paddingTop:'200px'}}>
+          <SelectInput placeholder={'placeholder'} width={'150px'} options={options} onChange={onChange} showClear />
+        </div>
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    );
+}
+```
+## API
+| Property | Type | Default | Description |
+| :--- | :--- | :--- | :--- |
+| placeholder | string | - | Placeholder in input box |
+| onChange | function | - | Callback function when input content is changed |
+| width | string | '150px' | Width of the input box |
+| showClear | boolean | false | Whether show delete button which can remove the input content  |
+| disabled | boolean | false | Whether the input is disabled  |
+| defaultValue | string | - | Default value of the input box  |
+| options | {label}[] | - | Content of select list |
+| listHeight | string | auto | Height of select list |
+| inputPadding | string | '6px 20px 6px 10px' | Padding of input box |
+| listPadding | string | '6px' | Padding of select list |
+| inputFontSize | string | '14px' | Fontsize of input box |
+| listFontSize | string | '14px' | Fontsize of select list |
