@@ -1,5 +1,5 @@
 # react-selector-input
-[![npm](https://img.shields.io/badge/npm-v0.1.0-orange)](https://www.npmjs.com/package/react-selector-input)
+[![npm](https://img.shields.io/badge/npm-v0.1.3-orange)](https://www.npmjs.com/package/react-selector-input)
 [![license](https://img.shields.io/badge/license-MIT-blue)](https://github.com/Swelldg/react-selector-input/blob/master/license)
 > a React input component with selector and filter
 
