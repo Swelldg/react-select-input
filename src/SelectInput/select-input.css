@@ -37,7 +37,8 @@
 .react-select-input-select-list{
     width: 150px;
     display: none;
-    position: relative;
+    background: white;
+    position: absolute;
     box-sizing: border-box;
     max-height: 150px;
     overflow-y: scroll;
