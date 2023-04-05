@@ -1,5 +1,5 @@
 # react-select-input
-[![npm](https://img.shields.io/badge/npm-v0.0.1-orange)](https://www.npmjs.com/package/react-select-input)
+[![npm](https://img.shields.io/badge/npm-v0.1.0-orange)](https://www.npmjs.com/package/react-select-input)
 [![license](https://img.shields.io/badge/license-MIT-blue)](https://github.com/Swelldg/react-select-input/blob/master/license)
 > a React input component with selector and filter
 
@@ -10,6 +10,11 @@
   When users input content,**react-select-input** can filter the labels in the selector based on keywords.Those keywords will also be highlighted with different color in the selector.
 - Provide customized css style  
   Users can determine the size of components according to their own needs.
+ 
+ ## Example
+ `npm start`
+![demo](/demo.gif)
+
 ## Basic Usage
 ### Installation
 ```
